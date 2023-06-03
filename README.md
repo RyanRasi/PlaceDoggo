@@ -31,7 +31,7 @@ The API server will start and listen for incoming requests on `http://localhost:
 
 3. Request a dog picture:
 
-To retrieve a dog picture with specific dimensions, make a GET request to the API endpoint:
+### To retrieve a dog picture with specific dimensions:
 
 GET http://localhost:8000/get/{width}x{height}
 
@@ -43,7 +43,7 @@ GET http://localhost:8000/get/800x600
 
 This will return a dog picture with a width of 800 pixels and a height of 600 pixels.
 
-- To retrieve a random dog picture:
+### To retrieve a random dog picture:
 
 GET http://localhost:8000/any
 
