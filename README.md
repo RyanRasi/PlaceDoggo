@@ -1,21 +1,62 @@
 # PlaceDoggo
-A placeholder image generator written in Go that returns specifically sized pictures of dogs.
 
-### Endpoints
+The Placeholder Image API is a simple service written in GoLang that provides specifically sized pictures of dogs. It generates placeholder images on-the-fly with the requested dimensions, allowing developers to integrate dynamic dog pictures into their applications for testing or prototyping purposes.
 
-{localhost or IP}:8000/any - Returns a random picture from the assets folder 
+## API Endpoints
 
-{localhost or IP}:8000/get/{width}x{height} - Returns a random picture from the assets folder that has been resized based on your parameters
+The API provides a two endpoints for requesting dog pictures:
 
-### How to Run
+- `{width}`: The desired width of a dog picture in pixels.
+- `{height}`: The desired height of a dog picture in pixels.
 
-Install Go dependencies
-```
-go mod "github.com/gorilla/mux"
-go mod "github.com/nfnt/resize"
-```
+- `/any`: A random picture of a dog picture.
 
-Run with
-```
-go run main.go
-```
+## Usage
+
+1. Clone the repository:
+
+`git clone https://github.com/RyanRasi/PlaceDoggo`
+
+2. Build and run the API:
+
+`go build`
+
+`./placedoggo`
+
+The API server will start and listen for incoming requests on `http://localhost:8000` by default.
+
+3. Request a dog picture:
+
+To retrieve a dog picture with specific dimensions, make a GET request to the API endpoint:
+
+GET http://localhost:8000/get/{width}x{height}
+
+Replace `{width}` and `{height}` with the desired dimensions of a random dog picture.
+
+Example:
+
+GET http://localhost:8000/get/800x600
+
+This will return a dog picture with a width of 800 pixels and a height of 600 pixels.
+
+- To retrieve a random dog picture:
+
+GET http://localhost:8000/any
+
+This will return a random dog picture of differing dimensions.
+
+## Dependencies
+
+`github.com/gorilla/mux`
+
+`github.com/nfnt/resize`
+
+## Support and Donations
+
+If you find this project useful and would like to support its development, consider making a donation.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/uiSK0Ex)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
