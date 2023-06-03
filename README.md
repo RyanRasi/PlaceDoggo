@@ -6,8 +6,12 @@ The Placeholder Image API is a simple service written in GoLang that provides sp
 
 The API provides a two endpoints for requesting dog pictures:
 
+`get`
+
 - `{width}`: The desired width of a dog picture in pixels.
 - `{height}`: The desired height of a dog picture in pixels.
+
+`any`
 
 - `/any`: A random picture of a dog picture.
 
