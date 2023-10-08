@@ -1,6 +1,6 @@
 # PlaceDoggo
 
-The Placeholder Image API is a simple service written in GoLang that provides specifically sized pictures of dogs. It generates placeholder images on-the-fly with the requested dimensions, allowing developers to integrate dynamic dog pictures into their applications for testing or prototyping purposes.
+The Placeholder Image API is a simple service written in GoLang that provides user-defined sized pictures of dogs. It generates placeholder images on-the-fly with the requested dimensions, allowing developers to integrate dynamic dog pictures into their applications for testing or prototyping purposes.
 
 ## API Endpoints
 
